@@ -24,85 +24,49 @@
             <h2 class="section-header">Contact us</h2>
         </div>
     </section>
-
-    <section class="contact-address-area">
-        <div class="container">
-            <div class="sec-title-style1 text-center max-width">
-                <div class="title">Contact Us</div>
-                <div class="text">
-                    <div class="decor-left"><span></span></div>
-                    <p>Quick Contact</p>
-                    <div class="decor-right"><span></span></div>
-                </div>
-                <div class="bottom-text">
-
-                </div>
-            </div>
-            <div class="contact-address-box row">
-                <!--Start Single Contact Address Box-->
-                <div class="col-sm-4 single-contact-address-box text-center">
-                    <div class="icon-holder">
-                        <span class="icon-clock-1">
-                            <span class="path1"></span><span class="path2"></span><span class="path3"></span><span
-                                class="path4"></span><span class="path5"></span><span class="path6"></span><span
-                                class="path7"></span><span class="path8"></span><span class="path9"></span><span
-                                class="path10"></span><span class="path11"></span><span class="path12"></span><span
-                                class="path13"></span><span class="path14"></span><span class="path15"></span><span
-                                class="path16"></span><span class="path17"></span><span class="path18"></span><span
-                                class="path19"></span><span class="path20"></span>
-                        </span>
-                    </div>
-                    <h3>Lorem Ipsum</h3>
-                    <h2>Lorem Ipsum is simply dummy</h2>
-                </div>
-                <!--End Single Contact Address Box-->
-                <!--Start Single Contact Address Box-->
-                <div class="col-sm-4 single-contact-address-box main-branch">
-                    <h3>Lorem Ipsum</h3>
-                    <div class="inner">
-                        <ul>
-                            <li>
-                                <div class="title">
-                                    <h4>Address:</h4>
-                                </div>
-                                <div class="text">
-                                    <p>Lorem Ipsum, 40C, Lorem Ipsum dummy,<br> Lorem Ipsum, Ch 98054</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="title">
-                                    <h4>Ph & Fax:</h4>
-                                </div>
-                                <div class="text">
-                                    <p>+123 456 789 <br> test@info.com</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="title">
-                                    <h4>Office Hrs:</h4>
-                                </div>
-                                <div class="text">
-                                    <p>Mon-Fri: 9:30am - 6:30pm<br> Sat-Sun: Closed</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--End Single Contact Address Box-->
-                <!--Start Single Contact Address Box-->
-                <div class="col-sm-4 single-contact-address-box text-center">
-                    <div class="icon-holder">
-                        <span class="icon-question-2">
-                            <span class="path1"></span><span class="path2"></span><span class="path3"></span><span
-                                class="path4"></span>
-                        </span>
-                    </div>
-                    <h3>Lorem Ipsum</h3>
-                    <h2>Lorem Ipsum is simply dummy</h2 </div>
-                    <!--End Single Contact Address Box-->
-                </div>
-            </div>
-    </section>
+<section>
+   <div class="form-wrapper">
+    <form id="form" method="post" name="emailform" action="email.php">
+      <h3 class="form-title">Responsive Form</h3>
+      <p class="form-undertitle">Fields marked "*" are required.</p>
+      <div class="form-input-grid">
+        <div>
+          <p class="form-text">Username*</p>
+          <div class="form-input-wrapper flexbox-left">
+            <i class="uil uil-user"></i>
+            <input class="form-input" id="uname" name="uname" type="text" placeholder="Username" aria-label="" required>
+          </div>
+        </div>
+        <div>
+        <p class="form-text">Password*</p>
+        <div class="form-input-wrapper flexbox-left">
+          <i class="uil uil-asterisk"></i>
+          <input class="form-input" id="pword" name="pword" type="password" placeholder="Password" aria-label="" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-input-max">
+      <p class="form-text">Email*</p>
+      <div class="form-input-wrapper flexbox-left">
+        <i class="uil uil-at"></i>
+        <input class="form-input" id="email" name="email" type="email" placeholder="Email" aria-label="" required>
+      </div>
+    </div>
+    <div class="form-input-max">
+      <p class="form-text">Message* (Max 500)</p>
+      <div id="textarea" class="form-input-wrapper flexbox-left-start">
+        <i class="uil uil-comment-dots"></i>
+        <textarea class="form-input" id="message" name="message" placeholder="Your message" maxlength="500" aria-label="" required></textarea>
+      </div>
+     </div>
+     <div class="form-input-max flexbox-left">
+      <div class="button-wrapper">
+        <button id="form-button" type="submit" class="button btn-primary"><i class="uil uil-envelope-heart"></i> Send<div class="btn-secondary"></div></button>
+       </div>
+     </div>
+   </form>
+  </div>
+     </section>
 
 
 
