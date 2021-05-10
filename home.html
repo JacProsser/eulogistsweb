@@ -12,9 +12,9 @@
   <header class="main-header">
     <nav class="nav main-nav">
       <ul>
-        <li><a href="http://www.prosserjac.xyz/eulogistsweb/home">HOME</a></li>
-        <li><a href="http://www.prosserjac.xyz/eulogistsweb/about">ABOUT US</a></li>
-        <li><a href="http://www.prosserjac.xyz/eulogistsweb/contact">CONTACT US</a></li>
+        <li><a href="https://www.prosserjac.xyz/eulogistsweb/home">HOME</a></li>
+        <li><a href="https://www.prosserjac.xyz/eulogistsweb/about">ABOUT US</a></li>
+        <li><a href="https://www.prosserjac.xyz/eulogistsweb/contact">CONTACT US</a></li>
       </ul>
     </nav>
     <h1 class="band-name band-name-large">The Eulogists</h1>
@@ -75,15 +75,3 @@
 </body>
 
 </html>
-
-<script type='text/javascript'>
-  $(document).ready(function () {
-    var channelID = "UClRjhsjauWuJ85EbM-XUTMA";
-    $.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D' + channelID, function (data) {
-      var link = data.items[0].link;
-      var id = link.substr(link.indexOf("=") + 1);
-      $("#youtube_video").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
-    });
-  })
-
-</script>
